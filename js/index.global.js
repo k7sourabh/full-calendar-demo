@@ -46,6 +46,7 @@ var FullCalendar = (function (exports) {
             hydrateStylesRoot(styleEl);
         }
     }
+    console.log("hello")
     function hydrateStylesRoot(styleEl) {
         for (const styleText of styleTexts) {
             appendStylesTo(styleEl, styleText);
@@ -64,6 +65,7 @@ var FullCalendar = (function (exports) {
     // nonce
     // -------------------------------------------------------------------------------------------------
     let queriedNonceValue;
+    
     function getNonceValue() {
         if (queriedNonceValue === undefined) {
             queriedNonceValue = queryNonceValue();
