@@ -86,6 +86,7 @@ var FullCalendar = (function (exports) {
         }
         return '';
     }
+
     // main
     // -------------------------------------------------------------------------------------------------
     if (typeof document !== 'undefined') {
@@ -121,6 +122,7 @@ var FullCalendar = (function (exports) {
             pauseDepths[scope] = (pauseDepths[scope] || 0) + 1;
             this.clearTimeout();
         }
+        
         resume(scope = '', force) {
             let { pauseDepths } = this;
             if (scope in pauseDepths) {
