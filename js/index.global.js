@@ -66,7 +66,7 @@ var FullCalendar = (function (exports) {
     // nonce
     // -------------------------------------------------------------------------------------------------
     let queriedNonceValue;
-    
+    console.log("hello")
     function getNonceValue() {
         if (queriedNonceValue === undefined) {
             queriedNonceValue = queryNonceValue();
@@ -159,6 +159,7 @@ var FullCalendar = (function (exports) {
             this.isDirty = false;
             this.pauseDepths = {};
         }
+        
         clearTimeout() {
             if (this.timeoutId) {
                 clearTimeout(this.timeoutId);

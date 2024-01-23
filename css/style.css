@@ -102,6 +102,7 @@ body {
 .MiniCalendarBtns button:hover {
     background-color: var(--clr-blue);
     color: #fff;
+   
 }
 
 /* date picker */
